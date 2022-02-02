@@ -46,6 +46,15 @@ public class CollectionServiceImpl implements CollectionService {
     }
 
     @Override
+    public CollectionEntity update(CollectionEntity collection) {
+        if (collection != null) {
+            CollectionEntity saved = collectionRepository.save(collection);
+            return saved;
+        }
+        return null;
+    }
+
+    @Override
     public CollectionEntity findByName(String name) {
         return collectionRepository.findByName(name);
     }

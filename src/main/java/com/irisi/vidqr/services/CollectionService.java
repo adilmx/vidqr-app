@@ -12,6 +12,7 @@ public interface CollectionService {
     public List<CollectionEntity> getAllCollections();
 
     public ResponseEntity<CollectionEntity> saveCollection(CollectionEntity collection);
+    public CollectionEntity update(CollectionEntity collection);
 
     CollectionEntity findByName(String name);
 }

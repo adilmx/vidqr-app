@@ -14,11 +14,13 @@ import java.util.List;
 public class CollectionRest {
     private final CollectionService collectionService;
 
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/id/{id}")
     public CollectionEntity getCollection(@PathVariable String id) {
         return collectionService.findById(id);
     }
 
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/")
     public List<CollectionEntity> getAllCollections() {
         return collectionService.getAllCollections();
@@ -30,6 +32,7 @@ public class CollectionRest {
         return collectionService.saveCollection(collection);
     }
 
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/name/{name}")
     public CollectionEntity findByName(@PathVariable String name) {
         return collectionService.findByName(name);
