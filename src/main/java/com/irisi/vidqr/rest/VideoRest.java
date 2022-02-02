@@ -37,8 +37,10 @@ public class VideoRest {
             return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(res);
         }
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(res);
-
     }
 
-
+    @GetMapping("/name/{name}")
+    public VideoEntity findByName(@PathVariable String name) {
+        return videoService.findByName(name);
+    }
 }
