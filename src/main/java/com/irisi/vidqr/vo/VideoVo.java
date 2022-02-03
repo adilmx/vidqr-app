@@ -15,6 +15,7 @@ public class VideoVo {
     String id;
     String id_collection;
     String name;
+    String description;
     String url;
     String image_src;
 }
