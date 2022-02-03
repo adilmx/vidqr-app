@@ -14,8 +14,12 @@
     <name>vidQR</name>
     <description>vidQR</description>
     <properties>
+<<<<<<< HEAD
         <java.version>17</java.version>
         <spring-cloud.version>2021.0.0</spring-cloud.version>
+=======
+        <java.version>1.8</java.version>
+>>>>>>> 0b1a2353941301f3c9e324db962e46e04cd4b2b2
     </properties>
     <dependencies>
         <dependency>
