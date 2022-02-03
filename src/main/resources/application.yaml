@@ -1,0 +1,9 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: https://eurika-server.herokuapp.com/eureka/
+  instance:
+    hostname: https://eurika-server.herokuapp.com/
+    prefer-ip-address: true
