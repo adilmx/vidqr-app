@@ -17,6 +17,7 @@ public class VideoEntity {
     @Id
     String id;
     String name;
+    String description;
     String url;
     String image_src;
 }

@@ -52,6 +52,7 @@ public class VideoServiceImpl implements VideoService {
                     }
                 }
                 video.setUrl(uploadUtil.upload(video.getUrl()));
+                video.setImage_src(uploadUtil.upload(video.getImage_src()));
                 collectionEntity.getVideos().add(video);
                 System.out.println(video.getUrl());
                 collectionService.update(collectionEntity);
